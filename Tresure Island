@@ -1,5 +1,15 @@
 import csv
-print('''
+print("Welcome to Treasure Island.")
+print("Your mission is to find the treasure.") 
+path=input('You\'re at a crossroad, where do you want to go? "LEFT" or "RIGHT" \n').lower()
+
+if(path=="left"):
+  step=(input('You\'ve come to a lake. There is an island in the middle of the lake. Type "WAIT" to wait for a boat. Type "SWIM" to swim across.\n')).lower()
+  if(step=="wait"):
+    step2=input("You have arrive at the island unharmed.There is a house with three doors.One red,One yellow and one Blue. Which colour do you choose? .\n").lower()
+    if(step2=="yellow"):
+      print("You Have Found The Treasure! You Win!.")
+      print('''
 *******************************************************************************
           |                   |                  |                     |
  _________|________________.=""_;=.______________|_____________________|_______
@@ -21,16 +31,6 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 /______/______/______/______/______/______/______/______/______/______/_____ /
 *******************************************************************************
 ''')
-print("Welcome to Treasure Island.")
-print("Your mission is to find the treasure.") 
-path=input('You\'re at a crossroad, where do you want to go? "LEFT" or "RIGHT" \n').lower()
-
-if(path=="left"):
-  step=(input('You\'ve come to a lake. There is an island in the middle of the lake. Type "WAIT" to wait for a boat. Type "SWIM" to swim across.\n')).lower()
-  if(step=="wait"):
-    step2=input("You have arrive at the island unharmed.There is a house with three doors.One red,One yellow and one Blue. Which colour do you choose? .\n").lower()
-    if(step2=="yellow"):
-      print("You Have Found The Treasure! You Win!.") 
     elif(step2=="blue"):
       print("It\'s a room full of fire. Game Over.")
     elif(step2=="red"):
