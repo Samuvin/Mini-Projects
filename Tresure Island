@@ -1,0 +1,108 @@
+import csv
+print('''
+*******************************************************************************
+          |                   |                  |                     |
+ _________|________________.=""_;=.______________|_____________________|_______
+|                   |  ,-"_,=""     `"=.|                  |
+|___________________|__"=._o`"-._        `"=.______________|___________________
+          |                `"=._o`"=._      _`"=._                     |
+ _________|_____________________:=._o "=._."_.-="'"=.__________________|_______
+|                   |    __.--" , ; `"=._o." ,-"""-._ ".   |
+|___________________|_._"  ,. .` ` `` ,  `"-._"-._   ". '__|___________________
+          |           |o`"=._` , "` `; .". ,  "-._"-._; ;              |
+ _________|___________| ;`-.o`"=._; ." ` '`."\` . "-._ /_______________|_______
+|                   | |o;    `"-.o`"=._``  '` " ,__.--o;   |
+|___________________|_| ;     (#) `-.o `"=.`_.--"_o.-; ;___|___________________
+____/______/______/___|o;._    "      `".o|o_.--"    ;o;____/______/______/____
+/______/______/______/_"=._o--._        ; | ;        ; ;/______/______/______/_
+____/______/______/______/__"=._o--._   ;o|o;     _._;o;____/______/______/____
+/______/______/______/______/____"=._o._; | ;_.--"o.--"_/______/______/______/_
+____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
+/______/______/______/______/______/______/______/______/______/______/_____ /
+*******************************************************************************
+''')
+print("Welcome to Treasure Island.")
+print("Your mission is to find the treasure.") 
+path=input('You\'re at a crossroad, where do you want to go? "LEFT" or "RIGHT" \n').lower()
+
+if(path=="left"):
+  step=(input('You\'ve come to a lake. There is an island in the middle of the lake. Type "WAIT" to wait for a boat. Type "SWIM" to swim across.\n')).lower()
+  if(step=="wait"):
+    step2=input("You have arrive at the island unharmed.There is a house with three doors.One red,One yellow and one Blue. Which colour do you choose? .\n").lower()
+    if(step2=="yellow"):
+      print("You Have Found The Treasure! You Win!.") 
+    elif(step2=="blue"):
+      print("It\'s a room full of fire. Game Over.")
+    elif(step2=="red"):
+      print("You enter a room of beasts. Game Over.")
+      
+  else:
+    print("You have attacked by an angry crocodile. Game Over")
+    print('''
+
+
+                  twoep   mkkkkkkk
+                z1     ldk        Vtmn
+               i   Cm    k        k   Tkm
+              k   xk D     k        V     m
+             yl                            m
+              m                             m
+               h                             l
+                l            k        Y       k
+                 p           yk       l       l
+                  k   V     y  k      l        k
+                   r 7h    z  l k     l        l
+                    o `'   l 7   l     k        k
+                     r  ' p  m   k    lmmmt      k
+                     l  .l  m    k    l          km
+                     l  r   k   Yh   y            k
+                     2oP     k   t   tyyy         k
+                       '  y  k   Dk      D        m
+                         mm  m  V  mmmmyt         mn
+                              Tyl t               m Ymmm
+                 (---. ' __        r             mt     Yz
+             (`--     `-'  )        mmm      mmlt  YMmmmmnnc
+              -_    =    --        wwwwt       D
+                >    =  (BP     mkT           Y
+                ---______)    K          m mkT
+                               Ym       y Y
+                                 ym    m
+                                    Ymm
+-
+''')
+else:
+  print("You fell into a hole. Game Over")
+  print('''
+
+
+
+                  twoep   mkkkkkkk
+                z1     ldk        Vtmn
+               i   Cm    k        k   Tkm
+              k   xk D     k        V     m
+             yl                            m
+              m                             m
+               h                             l
+                l            k        Y       k
+                 p           yk       l       l
+                  k   V     y  k      l        k
+                   r 7h    z  l k     l        l
+                    o `'   l 7   l     k        k
+                     r  ' p  m   k    lmmmt      k
+                     l  .l  m    k    l          km
+                     l  r   k   Yh   y            k
+                     2oP     k   t   tyyy         k
+                       '  y  k   Dk      D        m
+                         mm  m  V  mmmmyt         mn
+                              Tyl t               m Ymmm
+                 (---. ' __        r             mt     Yz
+             (`--     `-'  )        mmm      mmlt  YMmmmmnnc
+              -_    =    --        wwwwt       D
+                >    =  (BP     mkT           Y
+                ---______)    K          m mkT
+                               Ym       y Y
+                                 ym    m
+                                    Ymm
+-
+''')
+
