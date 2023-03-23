@@ -1,0 +1,80 @@
+import random
+rock = '''
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+'''
+
+paper = '''
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+'''
+
+scissors = '''
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+'''
+lose='''
+
+                  twoep   mkkkkkkk
+                z1     ldk        Vtmn
+               i   Cm    k        k   Tkm
+              k   xk D     k        V     m
+             yl                            m
+              m                             m
+               h                             l
+                l            k        Y       k
+                 p           yk       l       l
+                  k   V     y  k      l        k
+                   r 7h    z  l k     l        l
+                    o `'   l 7   l     k        k
+                     r  ' p  m   k    lmmmt      k
+                     l  .l  m    k    l          km
+                     l  r   k   Yh   y            k
+                     2oP     k   t   tyyy         k
+                       '  y  k   Dk      D        m
+                         mm  m  V  mmmmyt         mn
+                              Tyl t               m Ymmm
+                 (---. ' __        r             mt     Yz
+             (`--     `-'  )        mmm      mmlt  YMmmmmnnc
+              -_    =    --        wwwwt       D
+                >    =  (BP     mkT           Y
+                ---______)    K          m mkT
+                               Ym       y Y
+                                 ym    m
+                                    Ymm
+-'''
+game_image=[rock,paper,scissors]
+human=int(input("What do you choose? Enter 0 for Rock 1 for Paper 2 for scissors : \n"))
+if(human<=2):
+  print("\nYou Chose:\n")
+  print(game_image[human])
+  computer=random.randint(0,2)
+  print("\nComputer Chose:\n")
+  print(game_image[computer])
+  if(human<=2):
+    if(human==0 and computer==2):
+      print("You Win !")
+    elif(computer==0 and human==2):
+      print("You Lose !")
+      print(lose)
+    elif(computer>human):
+      print("You Lose !")
+      print(lose)
+    elif(human>computer):
+      print("You Win !")
+    elif(human==computer):
+      print("It\'s a Draw ! ")
+else:
+  print("You enter an invalid number , You lose !")
