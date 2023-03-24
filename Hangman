@@ -1,4 +1,5 @@
 import random
+import os
 stages = ['''
   +---+
   |   |
@@ -292,6 +293,7 @@ for _ in range(word_length):
 
 while not end_of_game:
     guess = input("Guess a letter: ").lower()
+    os.system('clear')
     if guess in display:
         print(f"You've already guessed {guess}")
     for position in range(word_length):
@@ -305,13 +307,11 @@ while not end_of_game:
         lives -= 1
         if lives == 0:
             end_of_game = True
-            print("You lose.")
+            print(".....You lose......")
 
     print(f"{' '.join(display)}")
 
     if "_" not in display:
         end_of_game = True
-        print("You win.")
-
-    from hangman_art import stages
+        print(".....You win.....")
     print(stages[lives])
